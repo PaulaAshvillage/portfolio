@@ -1,11 +1,14 @@
 <template>
-  <nav>
-    <router-link id="home-link" to="/">paula.</router-link>
+  <div>
+    <nav>
+      <router-link id="home-link" to="/">paula.</router-link>
+      <router-link class="router-link" to="/projects">projects</router-link>
+      <router-link class="router-link" to="/about">about</router-link>
+      <router-link class="router-link" to="contact">contact</router-link>
+    </nav>
 
-    <router-link class="site-links" to="/projects">projects</router-link>
-    <router-link class="site-links" to="/about">about</router-link>
-    <router-link class="site-links" to="contact">contact</router-link>
-  </nav>
+    <router-view />
+  </div>
 </template>
 <style scoped>
 nav {
@@ -16,7 +19,7 @@ nav {
   gap: 2rem;
   font-size: 1.2rem;
 }
-.site-links:hover {
+.router-link:hover {
   text-decoration: underline;
   text-decoration-color: var(--color-purple);
 }
