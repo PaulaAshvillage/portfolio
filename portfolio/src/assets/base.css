@@ -7,3 +7,6 @@
 html {
   background-color: var(--color-beige);
 }
+body {
+  padding-inline: 1rem;
+}
