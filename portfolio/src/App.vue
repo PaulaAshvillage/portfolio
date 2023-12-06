@@ -1,11 +1,15 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <Header-layout />
 </template>
+<script>
+import HeaderLayout from "@/layouts/HeaderLayout.vue";
 
+export default {
+  components: {
+    HeaderLayout,
+  },
+};
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
