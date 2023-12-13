@@ -22,6 +22,7 @@ nav {
 .router-link:hover {
   text-decoration: underline;
   text-decoration-color: var(--color-purple);
+  cursor: pointer;
 }
 
 #home-link {
